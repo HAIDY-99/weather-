@@ -1,157 +1,51 @@
 *{
-    margin: 0;
     padding: 0;
-    font-family:  'Poppins', sans-serif;
+    margin: 0;
     box-sizing: border-box;
 }
-
 body{
-    background: #222;
+    background: #fab22a;
 }
-
-.navbar {
-    display: flex;
-    justify-content: center; 
-    background-color: transparent;
+.wrapper{
+    width: 80vmin;
+    padding: 50px 40px;
+    background: #151515;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    transform: translate(-50% ,-50%);
+}
+span{
+    display: block;
+    text-align: center;
+    font-size: 60px;
+}
+p{
+    margin: 30px 0;
+    text-align: center;
+    color: #ffff;
+    font-size: 20px;
+    font-weight: 300;
+    word-wrap: break-word;
+    line-height: 35px;
+    opacity: 0;
+}
+.fade{
+    opacity: 1;
+    transition: opacity 1s;
+}
+button{
+    justify-content: center;
+    display: block;
+    align-items: center;
+    background: #fab22a;
+    border: none;
     padding: 10px;
-    list-style: none;
-    margin-bottom: 20px;
-}
-
-.navbar li {
-    margin: 0 15px;
-}
-
-.navbar a {
-    color: #fff;
-    text-decoration: none; 
+    margin: 0 auto;
     font-size: 18px;
     font-weight: 600;
-    padding-bottom: 5px; 
-    border-bottom: 2px solid transparent; 
-    transition: border-bottom 0.3s ease;
-}
-
-.navbar a:hover {
-    border-bottom: 2px solid #00feba;
-}
-
-
-.card{
-    width: 90%;
-    max-width: 470px;
-    background:linear-gradient(135deg ,#00feba ,#5b548a);
-    color: #fff;
-    margin: 100px auto 0;
-    border-radius: 20px;
-    padding: 40px 35px;
-    text-align: center;
-    flex-wrap: wrap;
-    flex-grow: 1;
-}
-
-.search{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-   
-}
-
-.search input{
-    border: 0;
-    outline: 0;
-    background: #ebfffc;
-    color: #555;
-    padding: 10px 25px;
-    height: 60px;
-    border-radius: 30px;
-    flex: 1;
-    margin-left: 16px;
-    font-size: 18px;
-    margin-right: 10px;
-}
-
-.search button {
-    border: 0;
-    outline: 0;
-    background: #ebfffc;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    border-radius: 5px;
+    padding: 12px 25px;
     cursor: pointer;
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-    padding: 0; 
-}
-
-
-.search button img{
-    width: 20px;
-    height: 20px;
-}
-.weather-icon{
-    width: 170px;
-    margin-top: 30px;
-}
-.weather h1{
-    font-size: 80px;
-    font-weight: 500;
-}
-.weather h2{
-    font-size: 45px;
-    font-weight: 400;
-    margin-top: -10px;
-}
-.details{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    margin-top: 50px;
-}
-.col{
-    display: flex;
-    align-items: center;
-    text-align: left;
-}
-.col img{
-    width: 40px;
-    margin-right: 10px;
-}
-.humidity, .wind{
-    font-size: 28px;
-    margin-top: -6px;
-}
-.footer {
-    margin-top: 30px;
-    padding-top: 20px;
-    border-top: 1px solid #fff; 
-}
-
-.footer p {
-    margin-bottom: 10px;
-    font-size: 14px;
-}
-
-.footer ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.footer li {
-    margin: 0 10px;
-}
-
-.footer a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.footer a:hover {
-    text-decoration: underline;
 }
